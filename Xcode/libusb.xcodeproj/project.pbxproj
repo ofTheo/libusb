@@ -679,6 +679,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1443EE8616417E63007E0579 /* libusb_debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				EXECUTABLE_EXTENSION = a;
+				MACH_O_TYPE = staticlib;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -686,6 +690,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1443EE8916417EA6007E0579 /* libusb_release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				EXECUTABLE_EXTENSION = a;
+				MACH_O_TYPE = staticlib;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -862,4 +870,3 @@
 	};
 	rootObject = 008FBF281628B79300BC5BE2 /* Project object */;
 }
-
